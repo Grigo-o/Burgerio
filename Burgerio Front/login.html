@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Log In Page</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="return">⬅ Back</a>
+    </div>
+    <div class="box">
+        <div class="container">
+            <i style="--clr:#00ff0a;"></i>
+            <i style="--clr:#ff0057;"></i>
+            <i style="--clr:#fffd44;"></i>
+            <form class="login" id="login-form" method="post">
+                <h2>Login</h2>
+                <div class="messages"></div>
+                <div class="inputBx">
+                    <input type="text" name="email" placeholder="Email" id="email-box">
+                </div>
+                <div class="inputBx">
+                    <input type="password" name="password" placeholder="Password" id="password-box">
+                </div>
+                <div class="inputBx">
+                    <input type="submit" value="Sign in">
+                </div>
+                <div class="links">
+                    <a href="forget-password.html">Forgot Password</a>
+                    <a href="register.html">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>

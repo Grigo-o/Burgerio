@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        body {
+            background: url(Images/background.jpg);
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header .return {
+            font-size: 25px;
+            color: orange;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        .header .return:hover {
+            color: rgb(253, 104, 4);
+        }
+
+        .container {
+            margin: auto;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            border: solid orange 2px;
+            border-radius: 20px;
+            height: 600px;
+        }
+
+        h2 {
+            color: orange;
+            font-size: 40px;
+        }
+
+        p {
+            color: orange;
+            font-size: 18px;
+        }
+
+        h5 {
+            color: whitesmoke;
+            margin-bottom: 10px;
+            font-weight: 400;
+            font-size: 15px;
+        }
+
+        .section {
+            position: relative;
+            width: 70%;
+        }
+
+        .input {
+            width: 100%;
+            padding: 12px 20px;
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 7px;
+            font-size: 1.2em;
+            color: #fff;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .small-inputs {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+        }
+
+        .small-section {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            margin-right: 0;
+        }
+
+        .small-input {
+            position: relative;
+            padding: 12px 20px;
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 7px;
+            font-size: 1.2em;
+            color: #fff;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .submit {
+            position: relative;
+            width: 50%;
+            padding: 12px 20px;
+            background: orange;
+            border: 2px solid orange;
+            border-radius: 40px;
+            font-size: 1.2em;
+            color: #fff;
+            box-shadow: none;
+            outline: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit:hover {
+            background-color: darkorange;
+        }
+
+        @media (max-width: 1100px) {
+            .container {
+                width: 70%;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html" class="return">⬅ Back</a>
+    </div>
+    <div class="container">
+        <h2>
+            Order
+        </h2>
+        <p>Pay With Credit Card</p>
+        <div class="section">
+            <h5>Cardholder Name</h5>
+            <input type="text" name="cardName" class="input">
+        </div>
+        <div class="section">
+            <h5>Card Number</h5>
+            <input type="text" name="cardNumber" class="input">
+        </div>
+        <div class="small-inputs">
+            <div class="small-section">
+                <h5>MM</h5>
+                <input type="text" name="month" class="small-input">
+            </div>
+            <div class="small-section">
+                <h5>YYYY</h5>
+                <input type="text" name="year" class="small-input">
+            </div>
+            <div class="small-section">
+                <h5>CVV</h5>
+                <input type="text" name="cvv" class="small-input">
+            </div>
+        </div>
+        <input type="submit" value="Order" class="submit">
+    </div>
+</body>
+
+</html>
